@@ -1,0 +1,89 @@
+.schemes-container {
+  width: 100vw;
+  margin: 0;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #fff1f6, #fbd3e0);
+}
+
+.schemes-container h2 {
+  color: #9b2d5e;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.schemes-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.scheme-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.scheme-card.fade-in {
+  opacity: 1;
+}
+
+.scheme-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+.scheme-card h3 {
+  color: #9b2d5e;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.scheme-card p {
+  color: #444;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.scheme-link {
+  color: #9b2d5e;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.scheme-link:hover {
+  text-decoration: underline;
+  color: #7a1c3c;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.schemes-container h2 {
+  animation: fadeIn 1s ease-out;
+}
+
+.scheme-card {
+  animation: fadeIn 0.5s ease-out forwards;
+}

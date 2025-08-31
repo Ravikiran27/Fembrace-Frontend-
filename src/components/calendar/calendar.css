@@ -1,0 +1,122 @@
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    background-color: #d81b60;
+    padding: 12px 18px;
+    border-radius: 2rem;
+    width: fit-content;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #f4c2c2;
+    margin-bottom: 4px;
+}
+
+.input-box input {
+    padding: 6px;
+    width: 80px;
+    border: 2px solid #a75d8a;
+    border-radius: 6px;
+    text-align: center;
+    outline: none;
+    transition: 0.3s;
+    font-size: 13px;
+    background-color: #faf5f8;
+    color: #2a1b2d;
+}
+
+.input-box input:focus {
+    border-color: #d81b60;
+    box-shadow: 0 0 6px #d81b6066;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to bottom, #fff1f6, #fbd3e0);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #5e2e64;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.calendar-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.calendar-box {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.calendar-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.react-calendar {
+    width: 100%;
+    max-width: 320px;
+    background: white;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border: none;
+}
+
+.react-calendar__tile {
+    border-radius: 6px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.current-period {
+    background: #d81b60 !important;
+    color: white !important;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.predicted-period {
+    background: #febfbf !important;
+    color: #5e2e64 !important;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.react-calendar__tile:hover {
+    background: #fde8eb;
+}
+
+h3 {
+    color: #5e2e64;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+

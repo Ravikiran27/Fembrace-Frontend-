@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: #800f4b;
+  color: white;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.profile-btn {
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 50%;
+  border: 0.125rem solid white;
+  background-color: white;
+  color: #800f4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 3.2rem;
+  right: 0;
+  background-color: #f6ccdba7;
+  padding: 1.2rem 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2), 0 0 0.3rem rgba(128, 15, 75, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  z-index: 9999;
+  width: 10rem;
+  height: 8rem;
+  animation: dropdownFade 0.3s ease
+}
+
+@keyframes dropdownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-0.6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.currUser {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #800f4b;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #800f4b;
+  font-size: 0.95rem;
+  cursor: pointer;
+ }
+
+.logout-btn:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,64 @@
+.remedies-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 50px 10%;
+    background: linear-gradient(to bottom, #fff1f6, #fbd3e0);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    position: relative;
+    gap: 10rem;
+  }
+  
+  .remedies-container h2 {
+    font-size: 2.2rem;
+    color: #800f4b;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .remedies-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  .remedy-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .remedy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  .remedy-icon {
+    font-size: 2.2rem;
+    color: #b56576;
+    margin-bottom: 10px;
+  }
+  
+  .remedy-card h3 {
+    font-size: 1.1rem;
+    color: #800f4b;
+    font-weight: 500;
+  }
+  
+  .remedy-card p {
+    font-size: 0.85rem;
+    color: #555;
+    opacity: 0.85;
+    line-height: 1.4;
+  }
+  
