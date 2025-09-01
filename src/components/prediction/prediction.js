@@ -124,12 +124,12 @@ const Prediction = () => {
     try {
       // Make both prediction and explanation requests in parallel
       const [predictionRes, explanationRes] = await Promise.all([
-        fetch("http://localhost:5002/predict", {
+  fetch("https://huggingface.co/spaces/RavikiranRk/PCOD/predict", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
         }),
-        fetch("http://localhost:5002/explain", {
+  fetch("https://huggingface.co/spaces/RavikiranRk/PCOD/explain", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
