@@ -1,13 +1,15 @@
+
 # Fembrace – PCOS/PCOD Detection and Awareness Platform
 
 Fembrace is a full-stack web platform designed to assist in the early detection of PCOS/PCOD in women. It combines medical awareness, symptom-based analysis, and machine learning predictions.
 
+
 ## 💻 Tech Stack
 
 - **Frontend**: React.js  
-- **Backend**: Node.js, Express.js  
+- **Backend**: Node.js, Express.js ([Live Backend](https://fembrace-node-backend.onrender.com))  
 - **Database**: MongoDB  
-- **Model Integration**: Flask
+- **Model Integration**: Flask ([Live Model API](https://ravikiranrk-pcod.hf.space))
 
 ---
 
@@ -38,40 +40,54 @@ Fembrace is a full-stack web platform designed to assist in the early detection 
 ---
 
 
-## 📂 Project Structure
-client/
-├── public/
-├── src/
-│ ├── components/
-│ ├── pages/
-│ ├── App.js
-│ └── index.js
-server/
-├── controllers/
-├── models/
-├── routes/
-├── app.js
-└── .env
-
 bash
-Copy
-Edit
+
+## 📂 Project Structure
+
+```
+public/
+src/
+	components/
+		calendar/
+		dashboard/
+		footer/
+		header/
+		home/
+		login/
+		prediction/
+		remedies/
+		schemes/
+		signup/
+		symptoms/
+	App.js
+	index.js
+```
+
 
 ## 🚀 Running Locally
 ```bash
-git clone https://github.com/Piyush-1103/fembrace.git
-cd fembrace
+# Clone the repository
+git clone https://github.com/Ravikiran27/Fembrace-Frontend-.git
+cd Fembrace-Frontend-
 
-# For frontend
-cd client
+# Install dependencies
 npm install
-npm start
 
-# For backend
-cd ../server
-npm install
+# Start the frontend
 npm start
+```
+
+---
+
+## 🌐 Deployment URLs
+
+- **Frontend**: _[your-frontend-url]_  
+- **Backend**: https://fembrace-node-backend.onrender.com  
+- **Model API**: https://ravikiranrk-pcod.hf.space
+
+---
+
 📌 License
 MIT
 
-Made with ❤️ by Piyush Sharma and team .
+Made with ❤️ by Ravikiran27 and team.
